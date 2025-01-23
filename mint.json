@@ -3,8 +3,7 @@
   "name": "ReinforceUI-Studio",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg",
-     "href": "https://github.com/dvalenciar/ReinforceUI-Studio"
+    "light": "/logo/light.svg"
   },
     "modeToggle": {
     "default": "light",
@@ -43,11 +42,6 @@
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://mintlify.com/blog"
@@ -57,9 +51,8 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "overview",
+        "installation"
       ]
     },
     {
