@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "ReinforceUI-Studio",
   "logo": {
-    "dark": "/logo/logo_black.svg",
-    "light": "/logo/logo_white.svg"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
