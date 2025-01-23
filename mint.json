@@ -3,7 +3,12 @@
   "name": "ReinforceUI-Studio",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+     "href": "https://github.com/dvalenciar/ReinforceUI-Studio"
+  },
+    "modeToggle": {
+    "default": "light",
+    "isHidden": false
   },
   "favicon": "/favicon.svg",
   "colors": {
