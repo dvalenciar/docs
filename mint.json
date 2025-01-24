@@ -25,19 +25,6 @@
   },
   
   "tabs": [
-    {
-      "name": "Examples",
-      "url": "examples"
-    },
-  ],
-
-  
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
   ],
   "navigation": [
     {
