@@ -33,12 +33,12 @@
   
   "tabs": [
     {
-      "name": "Examples",
-      "url": "examples"
-    },
-    {
       "name": "Welcome",
       "url": "welcome"
+    },
+    {
+      "name": "Examples",
+      "url": "examples"
     }
   ],
   
