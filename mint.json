@@ -35,6 +35,10 @@
     {
       "name": "Examples",
       "url": "examples"
+    },
+    {
+      "name": "Welcome",
+      "url": "welcome"
     }
   ],
   
@@ -53,6 +57,12 @@
       "pages": [
         "examples/examples"
       ]
+    },
+    {
+      "group": "Welcome",
+        "pages": [
+            "welcome/welcome"
+        ]
     },
 
     {
