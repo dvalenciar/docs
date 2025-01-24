@@ -7,15 +7,27 @@ description: "description "
 
 <Frame as="div">
     # Hello and welcome
+
     ## This is the second line
+
     ### This is the third line
 
 </Frame>
 
-<CardGroup cols={3}>
-  <Card title="Card" icon="sparkles" />
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  <Card title="Card" icon="sparkles" />
+.card {
+  flex: 1;
+  margin: 0 10px;
+}
 
-  <Card title="Card" icon="sparkles" />
+<CardGroup class="card-group" cols={3}>
+  <Card class="card" title="Card" icon="sparkles" />
+  <Card class="card" title="Card" icon="sparkles" />
+  <Card class="card" title="Card" icon="sparkles" />
 </CardGroup>
+
