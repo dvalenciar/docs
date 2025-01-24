@@ -25,6 +25,10 @@
   },
   
   "tabs": [
+    {
+      "name": "Examples",
+      "url": "examples_dvr"
+    },
   ],
   "navigation": [
     {
