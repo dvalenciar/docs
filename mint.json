@@ -28,8 +28,9 @@
     {
       "name": "Examples",
       "url": "examples_dvr"
-    },
+    }
   ],
+  
   "navigation": [
     {
       "group": "Get Started",
