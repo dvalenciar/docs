@@ -61,12 +61,6 @@
       "pages": [
         "concepts/concepts"
       ]
-    },
-    {
-      "group": "Welcome",
-        "pages": [
-            "welcome/welcome"
-        ]
     }
   ]
 }
