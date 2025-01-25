@@ -41,8 +41,8 @@
       "url": "documentation"
     },
     {
-      "name": "Examples",
-      "url": "examples"
+      "name": "RL Concepts",
+      "url": "concepts"
     }
   ],
   
@@ -57,9 +57,9 @@
     },
 
     {
-      "group": "Examples",
+      "group": "RL initialization",
       "pages": [
-        "examples/examples"
+        "concepts/examples"
       ]
     },
     {
