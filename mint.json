@@ -37,6 +37,10 @@
       "url": "welcome"
     },
     {
+      "name": "Documentation",
+      "url": "documentation"
+    },
+    {
       "name": "Examples",
       "url": "examples"
     }
@@ -46,9 +50,9 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "installation",
-        "run"
+        "documentation/introduction",
+        "documentation/installation",
+        "documentation/run"
       ]
     },
 
