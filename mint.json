@@ -33,7 +33,7 @@
   },
 
 
-  "defaultPage": "welcome",
+  "defaultPage": "/welcome",
 
   "primaryTab": {
         "name": "Welcome"
