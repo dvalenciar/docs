@@ -165,7 +165,7 @@ To make it even easier, we have already provided a pre-built image, ready to run
         xhost +local:
         docker run -it --rm   -e DISPLAY=$DISPLAY   -v /tmp/.X11-unix:/tmp/.X11-unix   -v /home/{user_name}:/root/logs   reinforceui-studio bash
       ```
-      You can get your {user_name} by running: `whoami`, for example, in my case, the full command is:
+      You can get your `{user_name}` by running: `whoami`, for example, in my case, the full command is:
       ```bash
         docker run -it --rm   -e DISPLAY=$DISPLAY   -v /tmp/.X11-unix:/tmp/.X11-unix   -v /home/david:/root/logs  reinforceui-studio bash
       ```
@@ -177,3 +177,11 @@ To make it even easier, we have already provided a pre-built image, ready to run
         ```
     </Step>
 </Steps>
+
+<Warning>
+  There are some issues with the docker folder log and some video records; we are working on it.
+</Warning>
+
+
+
+You are now ready to start using ReinforceUI Studio.
