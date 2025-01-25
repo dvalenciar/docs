@@ -18,7 +18,7 @@ We will take care of the rest.
 ReinforceUI Studio offers several ways to get started, allowing you to choose the method that best suits your setup:
 
 
-### Clone and Run Locally
+### Run Locally
 
 <Tip>
     Running locally means setting up ReinforceUI Studio directly on your machine. This method is ideal for users who prefer
@@ -43,7 +43,7 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
   </Step>
 </Steps>
 
-### Set Up in a Conda Environment
+### Conda Environment
 <Tip>
     Conda is a widely used package manager that simplifies dependency management and ensures compatibility across platforms.
     This method is ideal for users who want a clean, isolated environment without conflicts with other Python libraries or
@@ -73,4 +73,107 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
     ```
   </Step>
 
+</Steps>
+
+### Conda Environment with YML file
+<Tip>
+    Another easy way to install ReinforceUI Studio in a Conda environment is to use the provided `conda_environment.yml` file.
+    This file contains all the dependencies required to run the application, making the installation process even simpler.
+</Tip>
+
+<Steps>
+  <Step title="Clone the repository">
+      ```bash
+        git clone git@github.com:dvalenciar/ReinforceUI-Studio.git
+        cd ReinforceUI-Studio
+      ```
+  </Step>
+
+  <Step title="Create a new Conda environment using the `conda_environment.yml` file">
+      ```bash
+        conda env create -f conda_environment.yml
+      ```
+  </Step>
+
+  <Step title="Activate the Conda environment">
+      ```bash
+        conda activate reinforceui
+      ```
+  </Step>
+
+  <Step title="Run the application">
+      ```bash
+        python main.py
+      ```
+  </Step>
+</Steps>
+
+### Virtual Python Environment
+<Tip>
+    If you do not like Conda, a virtual Python environment is another option for installing ReinforceUI Studio.
+    A virtual Python environment is an isolated setup that allows you to manage project dependencies without affecting your
+    system’s Python or other projects. It's ideal for users who prefer lightweight setups without additional package managers like Conda.
+</Tip>
+
+<Steps>
+  <Step title="Create a new virtual Python environment">
+      ```bash
+        python3 -m venv reinforceui
+        source reinforceui/bin/activate
+      ```
+  </Step>
+
+  <Step title="Clone the repository">
+      ```bash
+        git clone git@github.com:dvalenciar/ReinforceUI-Studio.git
+        cd ReinforceUI-Studio
+      ```
+  </Step>
+
+  <Step title="Install the required dependencies">
+      ```bash
+        pip install -r requirements.txt
+      ```
+  </Step>
+
+  <Step title="Run the application">
+      ```bash
+        python main.py
+      ```
+  </Step>
+</Steps>
+
+### Docker Container
+
+<Tip>
+    Docker is a popular containerization tool that simplifies the deployment of applications across different platforms.
+    This method is perfect for users who want a hassle-free, isolated setup without worrying about managing dependencies.
+    Make sure Docker is installed on your system. Docker installation instructions [Docker Installation](https://docs.docker.com/get-docker/).
+</Tip>
+
+To make it even easier, we have already provided a pre-built image, ready to run in a Docker container.
+
+<Steps>
+  <Step title="Pull the ReinforceUI Studio Docker image:">
+      ```bash
+            docker pull ghcr.io/dvalenciar/reinforceui-studio:latest
+      ```
+  </Step>
+
+  <Step title="Run the Docker container">
+      ```bash
+        xhost +local:
+        docker run -it --rm   -e DISPLAY=$DISPLAY   -v /tmp/.X11-unix:/tmp/.X11-unix   -v /home/{user_name}:/root/logs   reinforceui-studio bash
+      ```
+      You can get your {user_name} by running: `whoami`, for example, in my case, the full command is:
+      ```bash
+        docker run -it --rm   -e DISPLAY=$DISPLAY   -v /tmp/.X11-unix:/tmp/.X11-unix   -v /home/david:/root/logs  reinforceui-studio bash
+      ```
+  </Step>
+
+    <Step title="Inside the docker container, run the application: ">
+        ```bash
+            python main.py
+        ```
+    </Step>
 </Steps>
