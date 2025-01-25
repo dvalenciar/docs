@@ -57,9 +57,9 @@
     },
 
     {
-      "group": "RL initialization",
+      "group": "Introduction to RL",
       "pages": [
-        "concepts/examples"
+        "concepts/concepts"
       ]
     },
     {
