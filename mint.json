@@ -33,10 +33,6 @@
   
   "tabs": [
     {
-      "name": "Welcome",
-      "url": "welcome"
-    },
-    {
       "name": "User Guides",
       "url": "documentation"
     },
