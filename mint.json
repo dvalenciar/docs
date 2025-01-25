@@ -30,12 +30,13 @@
     "name": "GitHub",
     "url": "https://github.com/dvalenciar/ReinforceUI-Studio"
   },
+
+  "primaryTab": {
+    "name": "welcome"
+  },
   
   "tabs": [
-    {
-      "name": "Welcome",
-      "url": "welcome"
-    },
+
     {
       "name": "Documentation",
       "url": "documentation"
