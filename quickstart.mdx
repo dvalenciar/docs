@@ -18,7 +18,7 @@ We will take care of the rest.
 ReinforceUI Studio offers several ways to get started, allowing you to choose the method that best suits your setup:
 
 
-### Option 1: Clone and Run Locally
+### Clone and Run Locally
 
 <Tip>
     Running locally means setting up ReinforceUI Studio directly on your machine. This method is ideal for users who prefer
@@ -41,4 +41,36 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
         python main.py
       ```
   </Step>
+</Steps>
+
+### Set Up in a Conda Environment
+<Tip>
+    Conda is a widely used package manager that simplifies dependency management and ensures compatibility across platforms.
+    This method is ideal for users who want a clean, isolated environment without conflicts with other Python libraries or
+    system configurations. Ensure Conda is installed on your system before proceeding.
+    You can find Conda installation instructions [Conda Installation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html).
+</Tip>
+
+<Steps>
+  <Step title="Create a new Conda environment">
+      ```bash
+        conda create -n reinforceui python=3.10
+        conda activate reinforceui
+      ```
+  </Step>
+
+  <Step title="Clone the repository and install the required dependencies">
+      ```bash
+        git clone git@github.com:dvalenciar/ReinforceUI-Studio.git
+        cd ReinforceUI-Studio
+        pip install -r requirements.txt
+      ```
+  </Step>
+
+  <Step title="Run the application">
+    ```bash
+        python main.py
+    ```
+  </Step>
+
 </Steps>
