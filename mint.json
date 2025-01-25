@@ -34,7 +34,7 @@
   "tabs": [
     {
       "name": "User Guides",
-      "url": "documentation"
+      "url": "user_guides"
     },
     {
       "name": "RL Concepts",
@@ -42,18 +42,14 @@
     }
   ],
 
-  "primaryTab":
-    {
-      "name": "welcome"
-    },
 
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "documentation/introduction",
-        "documentation/installation",
-        "documentation/run"
+        "user_guides/introduction",
+        "user_guides/installation",
+        "user_guides/run"
       ]
     },
     {
