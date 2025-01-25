@@ -1,0 +1,45 @@
+---
+title: 'Run ReinforceUI Studio'
+description: 'Run the application'
+sidebarTitle: "Run ReinforceUI Studio"
+---
+
+Nothing better to explain something than a video. Check out our video tutorial, where we show you how ReinforceUI Studio works
+
+<Frame caption="ReinforceUI Studio Initial Tutorial ">
+  <video
+    controls
+    autoPlay
+    loop
+    muted
+    src="/images/initial_tutorial.mp4"
+  />
+</Frame>
+
+
+## Run ReinforceUI Studio
+Getting started with ReinforceUI Studio is simple and straightforward. After run `python main.py` Follow these easy steps:
+
+1. Launch the Application: Upon opening the app, you’ll be greeted with a welcoming window to begin your journey.
+
+2. Select Your RL Platform: Choose from popular Reinforcement Learning platforms like Gymnasium, DeepMind Control Suite (DMCS), or MuJoCo.
+
+3. Choose Your Environment: Select the specific environment from a list of available options tailored to your chosen platform.
+
+4. Pick Your Algorithm: Select the algorithm you want to use for training your model. Choose from a variety of popular algorithms like SAC, TD3, TQC and more.
+
+5. Configure Training Parameters: Customize your training parameters or use the default settings to get started quickly.
+
+6. Hit "Start" to begin the training process.
+
+7. Visualize Progress: Watch real-time training and evaluation curves to track your model’s performance.
+
+And that’s it! You’re ready to train your model.
+
+
+<Info>
+    ReinforceUI Studio is designed to simplify the training and monitoring of RL models, but for environments and algorithms
+    for **CONTINUOUS ACTION SPACE* only. Which this means? So, it is not suitable for environments such as Atari games or discrete control
+    tasks and algorithms like DQN.
+    Why do we have this limitation? Because these days robotics and many other real-world applications are using continuous action space environments and algorithms. So, we keep our focus on this area.
+</Info>
