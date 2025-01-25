@@ -42,7 +42,7 @@
   ],
 
    "primaryTab": {
-        "name": "Home"
+        "name": "Welcome"
    },
   "navigation": [
     {
@@ -54,10 +54,10 @@
       ]
     },
     {
-        "group": "Welcome",
-        "pages": [
-            "welcome"
-        ]
+      "group": "Welcome",
+      "pages": [
+        "welcome"
+      ]
     },
     {
       "group": "Introduction to RL",
