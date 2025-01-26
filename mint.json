@@ -15,9 +15,13 @@
     "dark": "#166534"
   },
 
-  "fonts": {
-  "body": "'Montserrat', sans-serif",
-  "heading": "'Montserrat', sans-serif"
+  "font": {
+    "headings": {
+    "family": "Montserrat"
+    },
+    "body": {
+    "family": "Montserrat"
+    }
   },
 
 
