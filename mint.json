@@ -50,17 +50,17 @@
 
   "navigation": [
     {
+      "group": "Welcome",
+      "pages": [
+        "welcome"
+      ]
+    },
+    {
       "group": "Get Started",
       "pages": [
         "user_guides/introduction",
         "user_guides/installation",
         "user_guides/run"
-      ]
-    },
-    {
-      "group": "Welcome",
-      "pages": [
-        "welcome"
       ]
     },
     {
