@@ -11,7 +11,7 @@
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#F80061",
-    "light": "#FFE7EB",
+    "light": "#F898a8",
     "dark": "#980039",
     "anchors": {
       "from": "#0D9373",
@@ -19,10 +19,9 @@
     }
   },
 
-
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Contact Us",
       "url": "mailto:davidvalenciaredrovan@gmail.com"
     }
   ],
