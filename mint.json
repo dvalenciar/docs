@@ -36,6 +36,8 @@
     "url": "https://github.com/dvalenciar/ReinforceUI-Studio"
   },
 
+  "feedback.thumbsRating": true,
+
   "primaryTab": {
         "name": "Welcome"
    },
