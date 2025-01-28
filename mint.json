@@ -68,7 +68,8 @@
       "pages": [
         "user_guides/introduction",
         "user_guides/installation",
-        "user_guides/run"
+        "user_guides/run",
+        "user_guides/post_run" 
       ]
     },
     {
