@@ -1,5 +1,5 @@
 ---
-title: "Reinforcement Learning Key Terminology"
+title: "Reinforcement Learning Cornerstones"
 sidebarTitle: "Terminology"
 ---
 
@@ -9,7 +9,7 @@ This section presents the key mathematical foundations and fundamental concepts 
   It is completely normal to need multiple readings to grasp these concepts fully. If you find them a bit confusing at first, that's perfectly okay—everyone experiences this. Don't get discouraged! With time and practice, these ideas will become much clearer. Keep going!
 </Tip>
 
-## <Icon icon="brain-circuit" />  Policy&#x20;
+## <Icon icon="brain-circuit" />  Policy;
 
 A **policy** is essentially the strategy an agent uses to decide what actions to take in different situations. It tells the agent what to do when it's in a specific state. Policies are typically divided into two types:
 
@@ -35,7 +35,7 @@ The Bellman Equation describes how the value of a state depends on the values of
 $$
 V(s) = \max_{a_t} \left( \sum_{s_{t+1}, r} p(s_{t+1}, r|s_t, a_t) [r(s_t, a_t) + \gamma V(s_{t+1})] \right)
 $$
-
+ddd
 $$
  Q(s, a) = \sum_{s_{t+1}, r} p(s_{t+1}, r|s_t, a_t) [r + \gamma \max_{a_{t+1}} Q(s_{t+1}, a_{t+1})]
 $$
