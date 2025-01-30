@@ -17,7 +17,7 @@ A **policy** is essentially the strategy an agent uses to decide what actions to
 
 2. **Deterministic Policy**: With this policy, the agent always chooses the same action for a given state. There's no randomness—each state is mapped to exactly one action.
 
-##<Icon icon="brain-circuit" /> Value Functions
+## <Icon icon="brain-circuit" /> Value Functions
 
 In simple terms, value functions help estimate how good it is for an agent to be in a certain state or to take a specific action from that state. They estimate the expected total return, $G\_t$​, an agent can receive over time. The return is the total sum of rewards the agent collects during its journey, while a reward is the immediate feedback after taking an action.
 
@@ -28,10 +28,16 @@ There are two types of value functions:
 2. **Action-Value Function** (or **Q-value**) $Q^{\pi}(s, a)$​: This estimates the expected return if the agent takes a specific action $a$ from state $s$ and then follows a policy $\pi$.
 
 
-##<Icon icon="brain-circuit" /> Bellman Equation
+## <Icon icon="brain-circuit" /> Bellman Equation
 
 The Bellman Equation describes how the value of a state depends on the values of other states. In simple terms, it defines the value of being in a particular state based on the expected future returns, which are obtained by taking actions from that state and moving to new states. These future returns are discounted by a factor $\gamma$,  which prioritizes immediate rewards over future ones, similar to how humans tend to favor quick rewards.
 
 $$
 V(s) = \max_{a_t} \left( \sum_{s_{t+1}, r} p(s_{t+1}, r|s_t, a_t) [r(s_t, a_t) + \gamma V(s_{t+1})] \right)
 $$
+
+$$
+ Q(s, a) = \sum_{s_{t+1}, r} p(s_{t+1}, r|s_t, a_t) [r + \gamma \max_{a_{t+1}} Q(s_{t+1}, a_{t+1})]
+$$
+
+> Don't worry about the equations—they are simply the mathematical representation of the Bellman Equation. Focus on understanding the underlying idea, and the math will make sense in time! 
