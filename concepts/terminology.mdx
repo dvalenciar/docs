@@ -18,9 +18,11 @@ In RL, the state space is a fundamental concept, as it defines the set of inform
    
 2. **High-dimensional representation**: often coming from a camera or other visual input sensor, allowing the agent to "see" the environment in the form of an image. This approach is chosen because it can capture a much richer set of information about the environment, which is especially valuable for tasks that are complex or involve many interacting factors. While high-dimensional representations require more computational resources, they provide the agent with a deeper understanding of its surroundings
 
-Let put these conceps in an clear example:
 
-> In a low-dimensional state space, the robot arm’s position could be represented by a simple vector, such as the angles of its joints and the position of an object, like $s=[joint1_angle,object_x,object_y]$. This provides just the essential information needed for the task, making it computationally efficient and easy to process. In contrast, a high-dimensional state space might use an image from a camera mounted on the robot, capturing the entire environment with all objects and obstacles. This richer representation allows the agent to make more informed decisions, especially in complex tasks like navigation or object recognition, but requires more computing power to handle the extra detail.
+<Accordion title="Example">
+  In a low-dimensional state space, the robot arm’s position could be represented by a simple vector, such as the angles of its joints and the position of an object, like $s=[joint_1,angle, object_x,object_y]$. This provides just the essential information needed for the task, making it computationally efficient and easy to process. In contrast, a high-dimensional state space might use an image from a camera mounted on the robot, capturing the entire environment with all objects and obstacles. This richer representation allows the agent to make more informed decisions, especially in complex tasks like navigation or object recognition, but requires more computing power to handle the extra detail
+</Accordion>
+
 
 
 ## <Icon icon="brain-circuit" />  Action Space
@@ -31,9 +33,12 @@ In RL, the action space defines all the possible actions an agent can take withi
 Depending on the task, environment, and agent's condition, the reward function can be dense or sparse. In a **dense reward** system, the agent receives a reward after each action, with feedback provided more frequently, which helps guide the learning process in smaller steps. Conversely, in a **sparse reward** system, the agent only receives rewards occasionally, often only at the end of an episode, making it more challenging for the agent to associate specific actions with outcomes. An episode refers to a single cycle of interaction between the agent and the environment, starting from the initial state and ending in a terminal state.
 
 
-> Example: In dense reward Mario Bros, Mario gets rewarded for every useful action, like jumping over an obstacle or collecting a coin. This frequent feedback helps him learn quickly. In a sparse reward system, Mario only receives a reward at the end of the level, making it harder to link actions to outcomes. An episode is a full playthrough of a level, from start to finish.
+<Accordion title="Reward Example">
+  Example: In dense reward Mario Bros, Mario gets rewarded for every useful action, like jumping over an obstacle or collecting a coin. This frequent feedback helps him learn quickly. In a sparse reward system, Mario only receives a reward at the end of the level, making it harder to link actions to outcomes. An episode is a full playthrough of a level, from start to finish
+</Accordion>
 
-## <Icon icon="brain-circuit" />  Policy
+
+## <Icon icon="brain-circuit" />  Policy Types
 
 A **policy** is essentially the strategy an agent uses to decide what actions to take in different situations. It tells the agent what to do when it's in a specific state. Policies are typically divided into two types:
 
@@ -70,7 +75,7 @@ $$
 
 ## <Icon icon="brain-circuit" /> On-policy vs. Off-policy Methods
 
-In Reinforcement Learning (RL), updating a policy can follow different methodologies. Broadly, these approaches fall into two categories: on-policy and off-policy learning.
+In RL, updating a policy can follow different methodologies. Broadly, these approaches fall into two categories: on-policy and off-policy learning.
 
 An **on-policy method** improves the same policy that is currently being used to make decisions. The agent gathers data by interacting with the environment according to its active policy and then refines that policy based on its experiences. This approach ensures that learning is closely tied to the behavior of the agent but can be sample-inefficient since it requires continuous interaction with the environment.
 
@@ -92,6 +97,7 @@ On the other hand, **offline RL** operates differently by learning from a fixed 
 <Tip>
 On-policy approaches, which rely on real-time data for policy updates, are inherently inefficient for offline RL. In contrast, off-policy methods, which can learn from previously collected experiences, offer the flexibility to be applied in both online and offline settings.
 </Tip>
+
 
 
 In this section, we've covered some of the key cornerstones of Reinforcement Learning, including the state and action spaces, as well as reward systems. We explored how these foundational concepts shape the agent's learning process, whether it’s through continuous or discrete actions, dense or sparse rewards, or low- and high-dimensional state spaces. Understanding these elements is essential for grasping how RL works in practice. We hope this has provided you with a solid foundation to build upon as we now move into the RL Taxonomy, where we’ll delve deeper into different types of RL algorithms and how they are categorized based on their approaches and applications.
