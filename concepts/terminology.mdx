@@ -1,6 +1,6 @@
 ---
 title: "Reinforcement Learning Cornerstones"
-sidebarTitle: "Terminology"
+sidebarTitle: "RL Cornerstones"
 ---
 
 This section presents the key mathematical foundations and fundamental concepts that underpin RL. It covers specialized techniques and equations essential for understanding how agents learn, make decisions, and optimize their behavior. These principles will serve as the theoretical basis for the following sections.
@@ -8,6 +8,30 @@ This section presents the key mathematical foundations and fundamental concepts 
 <Tip>
   It is completely normal to need multiple readings to grasp these concepts fully. If you find them a bit confusing at first, that's perfectly okay—everyone experiences this. Don't get discouraged! With time and practice, these ideas will become much clearer. Keep going!
 </Tip>
+
+
+## <Icon icon="brain-circuit" />  State Space
+
+In RL, the state space is a fundamental concept, as it defines the set of information that the agent relies on to understand its environment and make informed decisions. There are two types of state representation:
+
+1. **Low-dimensional representation**: It typically takes the form of a vector $\mathbf{s} = [x_1, x_2, \dots, x_n] \in \mathbb{R}^n$. Each element in the vector corresponds to a specific feature relevant to the task at hand, such as the positions of joints in a robotic arm, the location of an end-effector, or a desired goal state. This type of representation is preferred for its simplicity, computational efficiency, and straightforward implementation, making it ideal for tasks where key information can be effectively captured by a relatively small number of parameters.
+   
+2. **High-dimensional representation**: often coming from a camera or other visual input sensor, allowing the agent to "see" the environment in the form of an image. This approach is chosen because it can capture a much richer set of information about the environment, which is especially valuable for tasks that are complex or involve many interacting factors. While high-dimensional representations require more computational resources, they provide the agent with a deeper understanding of its surroundings
+
+Let put these conceps in an clear example:
+
+> In a low-dimensional state space, the robot arm’s position could be represented by a simple vector, such as the angles of its joints and the position of an object, like $s=[joint1_angle,object_x,object_y]$. This provides just the essential information needed for the task, making it computationally efficient and easy to process. In contrast, a high-dimensional state space might use an image from a camera mounted on the robot, capturing the entire environment with all objects and obstacles. This richer representation allows the agent to make more informed decisions, especially in complex tasks like navigation or object recognition, but requires more computing power to handle the extra detail.
+
+
+## <Icon icon="brain-circuit" />  Action Space
+
+In RL, the action space defines all the possible actions an agent can take within a given environment. It is divided into two main types: continuous and discrete. In a **continuous action space**, the agent can select actions from a continuous range, meaning there are potentially infinite choices available (e.g., the position of a steering wheel). On the other hand, a **discrete action space** consists of a finite set of distinct actions, where the agent must choose from a predefined list at each time step (e.g., pressing a button in a video game).
+
+## <Icon icon="brain-circuit" />  Reward Types
+Depending on the task, environment, and agent's condition, the reward function can be dense or sparse. In a **dense reward** system, the agent receives a reward after each action, with feedback provided more frequently, which helps guide the learning process in smaller steps. Conversely, in a **sparse reward** system, the agent only receives rewards occasionally, often only at the end of an episode, making it more challenging for the agent to associate specific actions with outcomes. An episode refers to a single cycle of interaction between the agent and the environment, starting from the initial state and ending in a terminal state.
+
+
+> Example: In dense reward Mario Bros, Mario gets rewarded for every useful action, like jumping over an obstacle or collecting a coin. This frequent feedback helps him learn quickly. In a sparse reward system, Mario only receives a reward at the end of the level, making it harder to link actions to outcomes. An episode is a full playthrough of a level, from start to finish.
 
 ## <Icon icon="brain-circuit" />  Policy
 
@@ -43,3 +67,31 @@ $$
 <Tip>
     Don't worry about the equations—they are simply the mathematical representation of the Bellman Equation. Focus on understanding the underlying idea, and the math will make sense in time!
 </Tip>
+
+## <Icon icon="brain-circuit" /> On-policy vs. Off-policy Methods
+
+In Reinforcement Learning (RL), updating a policy can follow different methodologies. Broadly, these approaches fall into two categories: on-policy and off-policy learning.
+
+An **on-policy method** improves the same policy that is currently being used to make decisions. The agent gathers data by interacting with the environment according to its active policy and then refines that policy based on its experiences. This approach ensures that learning is closely tied to the behavior of the agent but can be sample-inefficient since it requires continuous interaction with the environment.
+
+In contrast, **off-policy learning** allows an agent to improve a policy using data collected from a different policy, including past experiences or external demonstrations. This flexibility makes off-policy methods more data-efficient and capable of leveraging diverse sources of information, such as replay buffers or expert demonstrations. However, learning from off-policy data introduces additional complexity in ensuring stable and reliable updates.
+
+Both approaches have their strengths and trade-offs, with on-policy methods often preferred for stability in environments with rapidly changing dynamics, while off-policy methods excel in leveraging past data for efficient learning.
+
+
+## <Icon icon="brain-circuit" /> Online vs. Offline Reinforcement Learning
+
+Imagine training a self-driving car. One approach is to let the car drive around in a controlled environment, learning from every turn, stop, and obstacle it encounters—constantly refining its driving strategy based on real-time experiences. Another approach is to train the car using a vast dataset of recorded driving scenarios, allowing it to learn without actually being on the road. These two strategies correspond to online and offline RL, respectively.
+
+In **online RL**, the agent continuously interacts with the environment, making decisions in real time and adjusting its policy based on immediate feedback. This dynamic approach ensures that learning is closely tied to exploration, allowing the agent to refine its strategy based on the latest experiences. However, online RL can be resource-intensive, requiring consistent interaction with the environment, which may not always be feasible in real-world applications.
+
+
+On the other hand, **offline RL** operates differently by learning from a fixed dataset of past experiences—collected either through prior interactions or simulations. Instead of relying on real-time feedback, the agent optimizes its policy based on pre-existing data, making offline RL particularly valuable when direct interaction is costly, risky, or impractical. However, since the agent cannot explore beyond the dataset, ensuring generalization to unseen situations becomes a key challenge
+
+
+<Tip>
+On-policy approaches, which rely on real-time data for policy updates, are inherently inefficient for offline RL. In contrast, off-policy methods, which can learn from previously collected experiences, offer the flexibility to be applied in both online and offline settings.
+</Tip>
+
+
+In this section, we've covered some of the key cornerstones of Reinforcement Learning, including the state and action spaces, as well as reward systems. We explored how these foundational concepts shape the agent's learning process, whether it’s through continuous or discrete actions, dense or sparse rewards, or low- and high-dimensional state spaces. Understanding these elements is essential for grasping how RL works in practice. We hope this has provided you with a solid foundation to build upon as we now move into the RL Taxonomy, where we’ll delve deeper into different types of RL algorithms and how they are categorized based on their approaches and applications.
