@@ -77,7 +77,8 @@
       "group": "Introduction to RL",
       "pages": [
         "concepts/introduction",
-        "concepts/terminology"
+        "concepts/terminology",
+        "concepts/taxonomy",
       ]
     }
   ]
