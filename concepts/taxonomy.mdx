@@ -3,14 +3,16 @@ title: "Reinforcement Learning Taxonomy"
 sidebarTitle: "RL Taxonomy"
 ---
 
-In this section, we will explore how Reinforcement Learning (RL) is categorized Understanding the differences between these methods is crucial for selecting the most appropriate technique for a given task. In the following sections, we will delve deeper into each approach, exploring their advantages, challenges, and applications in various domains.
-
+In this section, we will explore how Reinforcement Learning is categorized. Understanding the differences between these methods is crucial for selecting the most appropriate technique for a given task. In the following sections, we will quickly review the key concepts.
 
 ## <Icon icon="brain-circuit" /> Model-Based vs. Model-Free RL
 
-The key difference between them lies in how much the agent understands about the environment’s dynamics—essentially, how actions lead to future states.
 
 To illustrate this distinction, imagine planning a trip. If you know which roads will be congested, you can take an alternative route, reducing travel time and fuel consumption. Similarly, if you are aware of the topics covered in an upcoming exam, you can focus your study on the most relevant material, avoiding unnecessary effort. In both cases, having a predictive model allows for better decision-making, optimizing resources and efficiency.
+
+<Tip>
+    The key difference between them lies in how much the agent understands about the environment’s dynamics—essentially, how actions lead to future states.
+</Tip>
 
 This principle is the foundation of Model-Based RL (MBRL). In MBRL, the agent builds or learns a model of the environment that helps it predict the consequences of its actions. This predictive ability enables strategic planning, leading to more efficient learning. However, developing an accurate model requires extensive data and computational resources, making it a more complex approach.
 
@@ -25,13 +27,16 @@ RL can be further categorised based on the methodological approach employed. The
 The agent learns a function that assigns values to states or state-action pairs, estimating how good a particular state or action is in terms of long-term rewards. Once the agent finds the optimal value function, it selects actions that maximize these values.
 
 ## <Icon icon="brain-circuit" /> Policy-Based RL
-Policy-Based RL: Instead of learning value functions, the agent directly learns a policy—a probability distribution over actions given states. This approach is particularly useful for environments with continuous or high-dimensional action spaces. Policy gradients are commonly used to refine the policy toward maximizing rewards.
+Instead of learning value functions, the agent directly learns a policy—a probability distribution over actions given states. This approach is particularly useful for environments with continuous or high-dimensional action spaces. Policy gradients are commonly used to refine the policy toward maximizing rewards.
 
 ## <Icon icon="brain-circuit" /> Actor-Critic RL
-Actor-Critic RL: This method combines both value-based and policy-based approaches. The actor learns and updates the policy, selecting actions, while the critic evaluates these actions using a value function. The critic helps guide the actor toward better decisions by providing feedback, balancing efficiency and stability in learning.
-
-Each approach has its strengths and is suited to different types of RL problems.
+This method combines both value-based and policy-based approaches. The actor learns and updates the policy, selecting actions, while the critic evaluates these actions using a value function. The critic helps guide the actor toward better decisions by providing feedback, balancing efficiency and stability in learning.
 
 
 ***
-In summary, Reinforcement Learning encompasses a diverse range of methods, each tailored to different problem settings and requirements. The distinction between model-free and model-based RL defines whether an agent learns purely from experience or leverages a predictive model to enhance decision-making. Furthermore, the classification into value-based, policy-based, and actor-critic approaches highlights different strategies for learning and optimizing policies. By understanding these fundamental concepts, one can better navigate the RL landscape and choose the most suitable approach for a given task. In the next section, we will delve deeper into the specific algorithms that bring these concepts to life.
+
+In summary, RL encompasses a diverse range of methods, each suited to different problem settings and requirements. This taxonomy offers a high-level overview of the key distinctions between these approaches, helping you select the most appropriate one for your task.
+
+<Tip>
+If some of these concepts or classifications weren’t entirely clear, don’t worry—just keep these groups in mind. When we explore actual code examples later, everything will become more intuitive.
+</Tip>
