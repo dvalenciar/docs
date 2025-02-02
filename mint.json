@@ -70,7 +70,7 @@
         "user_guides/installation",
         "user_guides/run",
         "user_guides/post_run" ,
-        "user_guides/load_pre_tran_model"
+        "user_guides/load_pre_train_model"
       ]
     },
     {
