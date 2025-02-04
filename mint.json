@@ -52,6 +52,10 @@
     {
       "name": "RL Concepts",
       "url": "concepts"
+    },
+    {
+      "name": "Algorithms",
+      "url": "algorithms"
     }
   ],
 
@@ -71,6 +75,12 @@
         "user_guides/run",
         "user_guides/post_run" ,
         "user_guides/load_pre_train_model"
+      ]
+    },
+    {
+      "group": "Algorithms",
+      "pages": [
+        "algorithms/algorithm_list",
       ]
     },
     {
