@@ -1,0 +1,43 @@
+---
+title: "Reinforcement Testbeds"
+sidebarTitle: "RL Testbeds"
+---
+
+One of the major challenges in RL research is the lack of standardization in experimental environments. Many studies introduce custom environments with unique state representations and reward functions, making replication and direct comparisons between algorithms difficult.
+To address this, ReinforceUI-Studio incorporates widely recognized testbeds used in academic research, ensuring a more standardized benchmarking approach. By using the same environments found in the literature, we provide a consistent framework for evaluating and comparing different RL algorithms, making performance analysis more reliable and insightful.
+
+<Tip>
+Do not worry for the installation of these environments, ReinforceUI-Studio will take care of it for you.
+</Tip>
+
+
+The testbeds available in ReinforceUI-Studio include:
+
+
+## <Icon icon="brain-circuit" /> DeepMind Control Suite
+[DeepMind Control Suite](https://github.com/google-deepmind/dm_control)
+
+DeepMind Control Suite (DMCS) is a robust and widely adopted testbed designed by DeepMind to facilitate RL research by providing a diverse set of continuous control tasks. It includes environments for locomotion, manipulation, and navigation, each with distinct dynamics and challenges
+
+![](/images/DMCS.png)
+
+One of DMCS’s strengths is its flexibility in observation types, supporting both low-dimensional vector states and high-dimensional raw pixel inputs, as well as multi-sensory representations. To ensure consistency across experiments, DMCS standardizes key elements: rewards are capped at 1000, and actions are normalized within a range of -1 to +1. This makes it a reliable benchmark for comparing RL algorithms.
+
+Moreover, DMCS accommodates different reward structures tailored to task-specific objectives, offering both sparse and dense reward settings. This versatility allows researchers to design experiments that reflect a wide range of real-world RL challenges. By providing a controlled and standardized environment, DMCS has become an essential tool for advancing reinforcement learning research and benchmarking new algorithms effectively.
+
+## <Icon icon="brain-circuit" /> OpenAI Gymnasium and MuJoCo
+[OpenAI Gymnasium and MuJoCo](https://github.com/Farama-Foundation/Gymnasium?tab=readme-ov-file)
+
+### OpenAI Gymnasium
+It is a widely used RL benchmark suite designed to provide a standardized set of environments for developing and evaluating RL algorithms. It offers a diverse collection of tasks, ranging from classic control problems and Atari games to more complex robotics simulations. Gymnasium ensures consistency by defining clear observation spaces, action spaces, and reward structures, making it easier to compare different algorithms. Its flexibility and ease of integration with various RL frameworks have made it one of the most popular platforms in both academia and industry for benchmarking and testing RL approaches.
+
+### MuJoCo
+
+It is a high-performance physics engine widely used for continuous control RL tasks, particularly in robotics and biomechanics research. It provides realistic simulations with accurate physics modeling, including rigid-body dynamics, contact forces, and friction. MuJoCo environments, often integrated with OpenAI Gymnasium, offer tasks such as robotic arm manipulation, locomotion, and dexterous hand control. The precision and efficiency of its physics engine make MuJoCo a preferred choice for training RL agents in complex, real-world-inspired scenarios.
+
+![](/images/mujoco.png)
+
+
+***
+These platforms—DeepMind Control Suite, OpenAI Gymnasium, and MuJoCo—are more than just testbeds; they are the battlegrounds where RL algorithms prove their worth.
+By standardizing challenges and ensuring fair comparisons, they accelerate innovation and push the boundaries of what AI can achieve, and the best part is that you can access them all in ReinforceUI-Studio.
