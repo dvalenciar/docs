@@ -102,9 +102,10 @@ On-policy approaches, which rely on real-time data for policy updates, are inher
 
 ## <Icon icon="brain-circuit" />  Exploration vs. Exploitation
 
+<Accordion title=" Exploration Example">
 Imagine being dropped into a vast, unfamiliar city with the goal of finding the best restaurant. You could immediately go to the first diner you see, but what if a hidden gem lies a few streets away? Alternatively, you could spend days wandering aimlessly, missing out on a great meal in the process. This dilemma—between immediate action and continued search—is a fundamental problem not just in daily life, but in RL as well.
-![https://huggingface.co/learn/deep-rl-course/unit1/exp-exp-tradeoff](/images/exploration.jpg)
-
+</Accordion>
+![](/images/exploration.jpg) Image source: https://huggingface.co/learn/deep-rl-course/unit1/exp-exp-tradeoff
 
 The optimality of the learned behavior in RL strongly depends on how an agent approaches exploration in each environment. Insufficient exploration can lead to suboptimal chances of success and hinder the learning process in accomplishing the task. If an RL agent does not explore enough, it may never discover the best possible actions, leading to a stagnation of learning. Conversely, if it explores too much without leveraging what it has learned, it may waste valuable time and resources.
 
