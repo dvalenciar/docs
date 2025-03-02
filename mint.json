@@ -92,5 +92,10 @@
         "concepts/testbeds"
       ]
     }
-  ]
+  ],
+  "footerSocials": {
+    "github": "https://github.com/dvalenciar/ReinforceUI-Studio",
+    "instagram": "https://www.instagram.com/reinforceui_studio/",
+    "x": "https://x.com/reinforceUI"
+  }
 }
