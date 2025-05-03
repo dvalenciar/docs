@@ -27,17 +27,34 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
 
 
 <Steps>
-  <Step title="Clone the repository and install the required dependencies">
+  <Step title="The easiest way to use ReinforceUI Studio is by installing it directly from PyPI">
+      ```bash
+        pip install reinforceui-studio
+      ```
+  </Step>
+
+  <Step title="Run the application">
+      ```bash
+        reinforceui-studio
+      ```
+  </Step>
+</Steps>
+
+
+
+
+<Steps>
+  <Step title=" Or install it from source">
       ```bash
         git clone git@github.com:dvalenciar/ReinforceUI-Studio.git
         cd ReinforceUI-Studio
-        pip install -r requirements.txt
+        pip install .
       ```
   </Step>
 
   <Step title="Run the application">
       ```python
-        python main.py
+        python reinforceui_studio/main.py
       ```
   </Step>
 </Steps>
@@ -62,13 +79,13 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
       ```bash
         git clone git@github.com:dvalenciar/ReinforceUI-Studio.git
         cd ReinforceUI-Studio
-        pip install -r requirements.txt
+        pip install .
       ```
   </Step>
 
   <Step title="Run the application">
     ```bash
-        python main.py
+        python reinforceui_studio/main.py
     ```
   </Step>
 
@@ -102,7 +119,7 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
 
   <Step title="Run the application">
       ```bash
-        python main.py
+        python reinforceui_studio/main.py
       ```
   </Step>
 </Steps>
@@ -113,6 +130,8 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
     A virtual Python environment is an isolated setup that allows you to manage project dependencies without affecting your
     system’s Python or other projects. It's ideal for users who prefer lightweight setups without additional package managers like Conda.
 </Tip>
+
+
 
 <Steps>
   <Step title="Create a new virtual Python environment">
@@ -131,16 +150,18 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
 
   <Step title="Install the required dependencies">
       ```bash
-        pip install -r requirements.txt
+        pip install .
       ```
   </Step>
 
   <Step title="Run the application">
       ```bash
-        python main.py
+        python reinforceui_studio/main.py
       ```
   </Step>
 </Steps>
+
+
 
 ### Docker Container
 
@@ -172,7 +193,7 @@ To make it even easier, we have already provided a pre-built image, ready to run
 
     <Step title="Inside the docker container, run the application: ">
         ```bash
-            python main.py
+            python reinforceui_studio/main.py
         ```
     </Step>
 </Steps>

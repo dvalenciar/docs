@@ -70,7 +70,7 @@
     {
       "group": "Get Started",
       "pages": [
-        "user_guides/introduction",
+        "user_guides/overview",
         "user_guides/installation",
         "user_guides/run",
         "user_guides/post_run" ,
