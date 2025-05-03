@@ -56,6 +56,10 @@
     {
       "name": "Algorithms",
       "url": "algorithms"
+    },
+    {
+      "name": "Release Notes",
+      "url": "release-notes"
     }
   ],
 
@@ -90,6 +94,13 @@
         "concepts/terminology",
         "concepts/taxonomy",
         "concepts/testbeds"
+      ]
+    },
+     {
+      "group": "Release Notes",
+      "pages": [
+        "release-notes/overview"
+
       ]
     }
   ],
