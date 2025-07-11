@@ -52,4 +52,15 @@ Here’s an example of a configuration file:
 
 As an added benefit, ReinforceUI Studio evaluates the final saved model and generates a video of its performance for one episode. This allows you to not only review the training curves but also visually assess how the trained policy performs—offering a deeper, more interactive way to evaluate your results.
 
-This combination of detailed logs, configuration summaries, and visual evaluation makes ReinforceUI Studio an ideal tool for managing and refining your reinforcement learning experiments.
+This combination of detailed logs, configuration summaries, and visual evaluation makes ReinforceUI Studio an ideal tool for managing and refining your RL experiments.
+
+### MLflow Integration
+
+ReinforceUI Studio offers seamless integration with MLflow, a powerful tool for tracking and visualizing machine learning experiments. During training, you can click the "Open MLflow Dashboard" button at any time to monitor your experiment's metrics and artifacts in real time.
+After training, you can continue your analysis by opening the MLflow dashboard at `localhost:5000` in your browser, allowing for in-depth post-run review and comparison of results.
+
+| ![](/images/mlflow_dashboard_1.png)          | ![](/images/mlflow_dashboard_2.png)               |
+| ------------------------------- | -------------------------------------- |
+| Example of MLflow Dashboard | Example of MLflow Metrics |
+
+This integration makes it easy to track, compare, and share your RL experiments, enhancing reproducibility and collaboration.

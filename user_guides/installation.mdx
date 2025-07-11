@@ -5,12 +5,14 @@ title: 'Installation'
 On this page, you will find the installation instructions for ReinforceUI Studio.
 
 ## Prerequisites
-You will need:
+Before installing ReinforceUI Studio, we will need  you to have the following prerequisites installed on your system:
+
 <Accordion icon="github" title="requires">
-    - Ubuntu linux (Tested on Ubuntu 22.04 LTS)
-    - python 3.8 or higher (Tested on python 3.10)
+    - Ubuntu Linux (Tested on Ubuntu 22.04 LTS and 24.04 LTS)
+    - Python 3.8 or higher (Tested on python 3.10, 3.11, and 3.12)
 </Accordion>
-We will take care of the rest.
+
+From now on, we will take care of the rest.
 
 ## Installation
 
@@ -27,7 +29,7 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
 
 
 <Steps>
-  <Step title="The easiest way to use ReinforceUI Studio is by installing it directly from PyPI">
+  <Step title="The easiest way to use ReinforceUI Studio is by installing it directly from the official PyPI">
       ```bash
         pip install reinforceui-studio
       ```
@@ -48,6 +50,7 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
       ```bash
         git clone git@github.com:dvalenciar/ReinforceUI-Studio.git
         cd ReinforceUI-Studio
+        pip install -r requirements.txt
         pip install .
       ```
   </Step>
@@ -79,6 +82,7 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
       ```bash
         git clone git@github.com:dvalenciar/ReinforceUI-Studio.git
         cd ReinforceUI-Studio
+        pip install -r requirements.txt
         pip install .
       ```
   </Step>
@@ -150,7 +154,9 @@ ReinforceUI Studio offers several ways to get started, allowing you to choose th
 
   <Step title="Install the required dependencies">
       ```bash
+        pip install -r requirements.txt
         pip install .
+
       ```
   </Step>
 
